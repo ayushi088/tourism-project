@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Dongle-lighter";
+    src: url("Dongle/Dongle-Light.ttf");
+}
+@font-face {
+    font-family: "Dongle-regular";
+    src: url("Dongle/Dongle-Regular.ttf");
+}
+@font-face {
+    font-family: "Dongle-Bold";
+    src: url("Dongle/Dongle-Bold.ttf");
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 25px; /* fit or visible to screen*/
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgb(199, 199, 206); /* Horizontal-Vertical-blur -rgb*/
+    margin-bottom: 0.5;
+
+}
+
+.logo img {
+    max-width: 15%;
+    height: auto;
+}
+
+.nav-menu ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between; /* Distributes links evenly */
+    margin-left: auto; /* Push to the right */
+}
+
+.nav-menu li {
+    list-style: none;   /* list ke dot remove */
+    margin-right: 20px; /* gap b/w bittons */
+}
+
+.nav-menu a {
+    text-decoration: none; /* button underline remove  */
+    font-family: "Dongle-Bold";
+    font-size: 1.6rem; /* for responsive */
+    color: #333;
+}
+.nav-menu li:last-child{
+    margin-right: 0px;
+}
+
+.nav-menu a:hover { /* curser point and change color*/
+    color: #ff7f50;
+}
+.tour{
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    
+}
+.tour-image{
+     
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 95px;
+        height: 80px;
+        object-fit: cover;
+        z-index: -1;
+    opacity: 0.7;
+
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-decoration: bold;
+    color: #2C3E50;
+}
+.content h1{
+    font-family: "Dongle-bold";
+    font-size: 4rem;
+    line-height: 3rem;
+
+}
+.content p{
+    font-family: "Dongle-regular";
+    color: rgb(00,00,00);
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.content a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff7f50;
+    font-family: "Dongle-light";
+    border-radius: 50px;
+    padding: 10px 25px; /* Button size bada karne ke liye */
+    font-size: 1.4rem;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* hover effect */
+}
+
+.content a:hover {
+    background-color: rgb(00, 00, 00);
+}
+.district a{
+    text-align: center;
+    font-family: "Dongle-Bold";
+    font-size: 3rem;
+    width: auto;
+    text-decoration: none;
+    
+}
+.district a:hover{
+    color: #ff7f50;
+}
+.district h2{
+    text-align: center;
+    outline: none;
+}
+
+
+.district-grid {
+    display: flex;
+    gap: 30px; /* Space between cards */
+    justify-content: center;
+    align-items: flex-start;
+}
+.district-item {
+    flex-shrink: 0;
+    width: 200px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.district-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* image fit the item properly */
+    border-radius: 5px;
+   
+}
+
+marquee{
+    width: 100%;
+    overflow: hidden; /* Hide content outside the container */
+    background-color: #fff;
+    padding: 20px 0;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+marquee {
+    display: flex; /* Makes all items inline */
+    animation: scrollMarquee 5s linear infinite; /* Infinite scrolling animation */
+}
+.district-item p {
+    font-family: "Dongle-Bold";
+    margin: 0; /* Remove unnecessary margin */
+    padding: 10px; /* Padding for text to not touch the edges */
+    font-size: 1.5rem; /* Responsive font size */
+    color: #333;
+    line-height: 1.1; /* Space between lines */
+    text-align: justify; /* Justify text for better alignment */
+    word-wrap: break-word; /* Allow text to break and wrap */
+    white-space: normal; /* Make sure text wraps and doesn’t overflow in one line */
+    max-width: 100%; /* Ensure text can go up to 100% of the container's width */
+    width: auto; /* Allow width to auto-adjust based on text size */
+    overflow: visible; /* Allow text overflow if necessary */
+    display: block; /* Block-level to allow wrapping */
+    text-decoration: none;
+}
+.district-item p {
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+.district-item p:hover{
+    color: #ff7f50;
+}
+.char-dham img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* image fit the item properly */
+    border-radius: 5px;
+    flex-shrink: 0;
+    width: 200px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+
+    
+}
+.char-dham{
+    font-family: "Dongle-Bold";
+}
+.c-grid{
+    margin-left: 30px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+.dham a{
+    text-align: center;
+text-decoration: none;
+font-family: "Dongle-Bold";
+width: auto;
+font-size: 3rem;
+margin-top: 10px;
+}
+.dham h2:hover{
+    color:#ff7f50;
+    text-align: center;
+    margin-top: 10px;
+}
+.char-dham p{
+    font-family: "Dongle-Bold";
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.3rem;
+}
+.char-dham h3{
+    font-family: "Dongle-Bold";
+    font-size: 3rem;
+    margin-right: 60px;
+    text-align: center;
+    
+}
+.char-dham h3:hover{
+    color:chocolate /*try*/
+}
+.char-dham p:hover{
+    color: #ff7f50;
+}
+.About{
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "Dongle-Bold";
+    font-size: 3rem;
+    margin-top: 20px;
+
+}
+.About p{
+    text-align: center;
+    font-family: "Dongle-Bold";
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+
+}
+.About h3{
+    color: #ff7f50;
+    font-size: 3rem;
+    text-decoration: none;
+
+}
+.About h3:hover{
+    color:#333
+}
+.About a{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.Contact{
+   padding: 80px;
+   text-align: center;
+   background-color: #dbd6d6; 
+   text-decoration: none;
+}
+.Contect a h3{
+    text-decoration: none;
+}
+.Contact h3{
+   font-family: "Dongle-Bold";
+   font-size: 3rem;
+   text-decoration: none;
+}
+.info p{
+    font-family: "Dongle-regular";
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+.info ul{
+    list-style: none;
+    display: flex;/*ek line mein aajay*/
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.info li{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    font-family: "Dongle-regular";
+    font-size: 1.2rem;
+    align-items: center;
+}
+.info li a{
+    text-decoration: none;
+    font-family: "Dongle-regular";
+    color: #333;
+}
+.info i{
+    font-size: 24px;
+    margin-right: 10px;
+}
+.form{
+    width: 100%;
+}
+input,textarea{
+    width: 70%;
+    padding: 10px ;
+    margin: 20px 0;
+    border: none;
+    box-shadow: 0 0 5px rgb(00,00,00); 
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-family: "Dongle-regular";
+}
+textarea{
+    height: 200px;
+}
+.form a button{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff7f50;
+    font-family: "Dongle-light";
+    border-radius: 50px;
+    padding: 10px 25px; /* Button size bada karne ke liye */
+    font-size: 1.4rem;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* hover effect */
+    border: none;
+
+}
+.form a button:hover{
+    background-color: rgb(00, 00, 00);
+
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.social-icons a{
+    color: #fff;
+    font-size: 24px;
+    margin-right: 20px;
+}
+footer p{
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
+}
